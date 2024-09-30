@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Product Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="font-sans bg-gray-100">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center p-6">
+            <div class="text-xl font-bold">ProductLogo</div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#features" class="hover:text-blue-600">Features</a></li>
+                    <li><a href="#testimonials" class="hover:text-blue-600">Testimonials</a></li>
+                    <li><a href="#cta" class="hover:text-blue-600">Get Started</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero bg-cover bg-center text-center text-white" style="background-image: url('hero-bg.jpg'); height: 500px;">
+        <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
+            <div>
+                <h1 class="text-5xl font-bold">Welcome to Our Product</h1>
+                <p class="text-lg mt-4">Discover how our product can solve your problems and simplify your life.</p>
+                <a href="#cta" class="mt-8 inline-block bg-blue-500 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-8">Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="feature p-6 border rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Feature One</h3>
+                    <p class="text-gray-700">Explanation of the feature.</p>
+                </div>
+                <div class="feature p-6 border rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Feature Two</h3>
+                    <p class="text-gray-700">Explanation of the feature.</p>
+                </div>
+                <div class="feature p-6 border rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Feature Three</h3>
+                    <p class="text-gray-700">Explanation of the feature.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-gray-200">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-8">What Our Users Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="testimonial p-6 border rounded-lg">
+                    <p class="text-gray-700">"This product changed my life!" - User 1</p>
+                </div>
+                <div class="testimonial p-6 border rounded-lg">
+                    <p class="text-gray-700">"A must-have tool for professionals." - User 2</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section id="cta" class="py-16 bg-blue-600 text-white text-center">
+        <h2 class="text-3xl font-semibold mb-4">Ready to Get Started?</h2>
+        <p class="text-lg mb-8">Sign up today and take your business to the next level!</p>
+        <a href="#" class="bg-white hover:bg-gray-200 text-blue-600 font-semibold py-3 px-6 rounded-full">Sign Up Now</a>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>© 2024 ProductName. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
